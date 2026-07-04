@@ -1,13 +1,67 @@
 ---
 import BackgroundSkill from "../skill/BackgroundSkillme.astro";
+import HtmlsImage from "../icons/skill_icons/frontend/iconHtml.astro"
+import CSSImage from "../icons/skill_icons/frontend/cssIcon.astro"
+import TailwindIcon from "../icons/skill_icons/frontend/tailwindIcon.astro";
+import AstroIconAstroComponent from "../icons/skill_icons/frontend/astroIcon.astro";
+import NodejsIconAstroComponent from "../icons/skill_icons/backend/nodejsIcon.astro";
+import JsIconAstroComponent from "../icons/skill_icons/backend/jsIcon.astro";
+import JavaIconAstroComponent from "../icons/skill_icons/backend/javaIcon.astro";
+import IconsqlAstroComponent from "../icons/skill_icons/backend/iconsql.astro";
+import PostgresIconAstroComponent from "../icons/skill_icons/backend/postgresIcon.astro";
+import SpringBootIconAStro from "../icons/skill_icons/backend/spring.astro";
+import DockerInconAstroComponent from "../icons/skill_icons/toolsIcon/dockerIncon.astro";
+import GitIconAstroComponent from "../icons/skill_icons/toolsIcon/gitIcon.astro";
+import PostmanIconAstroComponent from "../icons/skill_icons/toolsIcon/postmanIcon.astro";
 ---
 
 <section>
     <div class="relative overflow-hidden">
         <BackgroundSkill />
         <div class="relative z-10">
-            /* seccion habilidades */
-
+            <!-- Seccion skill div padre -->
+            <div class="py-12 px-4 bg-mauve-100 sm:px-6 lg:px-8">
+                <!-- div primer hijo -->
+                <div class="flex flex-col items-center">
+                    <h1 class="p-2 text-center text-5xl mt-6 sm:text-4xl md:text-5xl">Habilidades</h1>
+                    <div class="w-30 mt-3 p-0.5 inline-flex bg-linear-to-r from-orange-400 to-green-600"></div>
+                    <p class="py-6 text-base sm:text-lg text-muted-foreground leading-relaxed text-gray-500 text-center">Tecnologías y herramientas con las que trabajo para crear soluciones increíbles</p>
+                </div>
+                <!-- div segundo hijo -->
+                 <div class="flex flex-col gap-10 mx-auto md:flex-row md:mx-auto md:place-content-center md:min-h-72"> <!-- div padre -->
+                    <!-- div primer hijo -->
+                    <div class="min-h-52 rounded-3xl border-2 border-gray-400 p-8 flex flex-col place-items-center  gap-8 md:w-full lg:w-full">
+                        <h2 class="text-base font-bold mb-1 md:text-2xl md:font-bold">Frontend</h2>
+                        <div class="flex flex-wrap gap-5 justify-center items-center md:flex md:flex-wrap">
+                            <HtmlsImage class="w-12 h-12 object-contain"/>
+                            <CSSImage class="w-12 h-12 object-contain"/>
+                            <TailwindIcon class="w-12 h-12 object-contain"/>
+                            <AstroIconAstroComponent class="w-12 h-12 object-contain"/>
+                        </div>
+                    </div>
+                    <!-- div segundo hijo -->
+                    <div class="min-h-52 rounded-3xl border-2 border-gray-400 p-8 flex flex-col place-items-center  gap-8 md:w-full lg:w-full">
+                        <h2 class="text-base font-bold mb-1 md:text-2xl md:font-bold">Backend</h2>
+                        <div class="flex flex-wrap gap-5 justify-center items-center lg:flex-wrap">
+                            <NodejsIconAstroComponent class="w-12 h-12"/>
+                            <JsIconAstroComponent class="w-12 h-12"/>
+                            <JavaIconAstroComponent class="w-12 h-12"/>
+                            <IconsqlAstroComponent class="w-12 h-12"/>
+                            <PostgresIconAstroComponent class="w-12 h-12"/>
+                            <SpringBootIconAStro class="w-12 h-12"/>
+                        </div>
+                    </div>
+                    <!-- div tercer hijo -->
+                    <div class="min-h-52 rounded-3xl border-2 border-gray-400 p-8 flex flex-col place-items-center gap-8 md:w-full lg:w-full">
+                        <h2 class="text-base font-bold mb-1 md:text-2xl md:font-bold">Herramientas</h2>
+                        <div class="flex flex-wrap gap-5 justify-center items-center lg:flex-wrap">
+                            <DockerInconAstroComponent class="w-12 h-12 "/>
+                            <GitIconAstroComponent class="w-12 h-12 "/>
+                            <PostmanIconAstroComponent class="w-12 h-12"/>
+                        </div>
+                    </div>
+                 </div>
+            </div>
         </div>
     </div>
 </section>
