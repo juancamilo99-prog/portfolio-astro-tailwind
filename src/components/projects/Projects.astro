@@ -1,0 +1,66 @@
+---
+import { projects } from "../../data/projects_view";
+import BackgroundProjects from "../projects/BackgroundProjects.astro";
+import {Github} from "lucide-astro";
+import { ExternalLink } from "lucide-astro";
+---
+
+<section>
+  <div class="relative overflow-hidden">
+    <BackgroundProjects />
+    <div class="relative z-50">
+      <!-- inicio de la seccion -->
+      <div class="max-w-7xl mx-auto px-4 py-12"> <!-- contenedor padre -->
+        <!-- primer contenedor hijo -->
+        <div class="project-title flex flex-col items-center">
+          <h1 class="p-2 text-center text-5xl mt-6 sm:text-4xl md:text-5xl"> Proyectos Destacados </h1>
+          <p class="py-6 text-base sm:text-lg text-muted-foreground leading-relaxed text-gray-500 text-center">Algunos de los proyectos en los que he trabajado recientemente</p>
+          <div class="w-30 mt-3 p-0.5 inline-flex bg-linear-to-r from-orange-400 to-green-600"></div>
+        </div>
+        <!-- segundo contenedor hijo -->
+         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 py-10">
+          { projects.map((project) => (
+          <div class="border rounded-2xl group transition-all duration-300 ease-in-out hover:-translate-y-2 hover:scale-[1.02] hover:shadow-2xl cursor-pointer"> <!-- contenedor entero -->
+          <!-- contenedor imagen -->
+            <div class="bg-linear-to-br from-orange-400 to-green-600 h-50 flex items-center justify-center rounded-t-2xl">
+               <div class="text-7xl">
+                {project.image}
+               </div>
+            </div>
+            <!-- contenedor informacion -->
+            <div class="min-h-min px-6 py-6">
+              <!-- contenedor titulo -->
+              <div class="text-xl mb-2 group-hover:text-orange-500 transition-colors">
+                {project.title}
+              </div>
+              <!-- contenedor descripcion -->
+              <div class="mb-4 text-sm leading-relaxed">
+                {project.description}
+              </div>
+              <!-- contenedor tag -->
+              <div class="flex flex-wrap gap-2 mb-4">
+                { project.tags.map((tag) => (
+                <span class="px-3 py-1 text-xs rounded-full border border-border">{tag}</span>
+              ))}
+              </div>
+              <!-- contenedor git y demo -->
+              <div class="flex gap-4">
+                <a href={project.github} class="flex items-center gap-2 text-sm hover:text-orange-500 transition-colors">
+                  <Github class="w-6 h-6"/>
+                  Código
+                </a>
+                <a href={project.demo} class="flex items-center gap-2 text-sm hover:text-orange-500 transition-colors">
+                  <ExternalLink class="w-6 h-6"/>
+                  Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
+         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
