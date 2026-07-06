@@ -4,19 +4,22 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 document.addEventListener("DOMContentLoaded", () =>{
 
     gsap.registerPlugin(ScrollTrigger);
-    const  tl = gsap.timeline({
-        defaults: {
-            duration:0.8,
-            ease: "power3.out",
-        }
-    });
 
-    tl.from(".skill-title", {
+    gsap.from(".skill-title", {
         scrollTrigger: {
             trigger: ".skill-title",
-            start: "top 100%",
+            start: "top 70%",
         },
         opacity:0,
-        y:30
-    });
+        x: -400
+    },"-=0.4");
+
+    gsap.from(".content-skill", {
+        scrollTrigger: {
+            trigger: ".content-skill",
+            start: "top 70%",
+        },
+        opacity: 0,
+        y: 40,
+    },"-=0.3")
 })
