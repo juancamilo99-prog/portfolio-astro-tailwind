@@ -1,0 +1,42 @@
+---
+import BackgroundFooterAstroComponent from "./BackgroundFooter.astro";
+import { Heart, Github } from "lucide-astro";
+---
+
+<footer class="border border-gray-300">
+    <div class="relative overflow-hidden">
+        <BackgroundFooterAstroComponent />
+        <div class="relative z-50">
+            <!-- inicio del footer -->
+             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col items-center gap-4">
+                <!-- contenedor iconos sociales footer -->
+                <div class="flex flex-col items-center justify-center">
+                    <div class="flex flex-row ms:flex-row md:flex-row gap-3">
+                    <div class="p-4 rounded-full border border-gray-300 bg-white cursor-pointer transition delay-150 duration-300 ease-in-out  hover:bg-orange-400">
+                    <a href="https://github.com/juancamilo99-prog" target="_blank">
+                        <img src="/src/assets/github.svg" alt="github" class="size-6">
+                    </a>
+                    </div>
+                    <div class="p-4 rounded-full border border-gray-300 bg-white cursor-pointer transition delay-150 duration-300 ease-in-out  hover:bg-orange-400">
+                        <a href="https://www.linkedin.com/in/juancamilomontero/" target="_blank">
+                            <img src="/src/assets/linkedin.svg" alt="github" class="size-6">
+                        </a>
+                    </div>
+                    <div class="p-4 rounded-full border border-gray-300 bg-white cursor-pointer transition delay-150 duration-300 ease-in-out  hover:bg-orange-400">
+                        <a href="">
+                            <img src="/src/assets/email-svgrepo-com.svg" alt="github" class="size-6">
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                <!-- contenedor info -->
+                 <div class="flex items-center justify-center gap-2 text-sm">
+                    Hecho con <Heart size="20" class="text-red-500"/> por Juan Camilo Montero
+                 </div>
+                 <div class="flex items-center">
+                    © {new Date().getFullYear()} Todos los derechos reservados
+                 </div>
+             </div>
+        </div>
+    </div>
+</footer>

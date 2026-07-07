@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
         scrollTrigger: {
             trigger: ".content-title",
             start: "top 50%",
-            markers: true
         },
         opacity: 0,
         y:30
