@@ -1,3 +1,10 @@
+---
+import emailIcon from "../../assets/email-svgrepo-com.svg";
+import linkedinIcon from "../../assets/linkedin.svg";
+import githubIcon from "../../assets/github.svg";
+import donwloadIcon from "../../assets/descargar.svg";
+---
+
 <div class="hero flex justify-center items-center gap-8 flex-col h-screen mt-25 md:h-screen sm:mt-25 md:mt-0 sm:h-screen">
     <div class="hero-avatar rounded-full inline-flex p-1 bg-linear-to-r from-orange-400 to-green-600 from-25% shadow-lg rotate-45">
         <div class="size-40 flex items-center justify-center text-7xl rounded-full bg-white -rotate-45">👨🏽‍💻</div>
@@ -13,22 +20,22 @@
         transition delay-150 duration-300 ease-in-out hover:translate-y-1 hover:scale-110 cursor-pointer"
         onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">ver proyectos</button>
         <a href="/public/cv/cv_camilo.pdf" download class="flex border-2 w-50 h-15 place-content-center place-items-center rounded-xl hover:bg-mauve-200 cursor-pointer">
-            <img src="../../assets/descargar.svg" alt="descargar" class="size-7">
+            <img src={donwloadIcon.src} alt="descargar" class="size-7">
             <p class="text-center p-2 md:text-base text-base font-bold text-black">Descargar CV</p>
         </a> 
     </div>
     <div class="hero-social flex flex-row ms:flex-row md:flex-row gap-5">
         <div class="social-icon p-3 rounded-full bg-mauve-200 cursor-pointer transition delay-150 duration-300 ease-in-out hover:translate-y-1 hover:scale-110 hover:bg-orange-400 hover:rotate-20">
             <a href="https://github.com/juancamilo99-prog" target="_blank">
-                <img src="../../assets/github.svg" alt="github" class="size-7">
+                <img src={githubIcon.src} alt="github" class="size-7">
             </a></div>
         <div class="social-icon p-3 rounded-full bg-mauve-200 cursor-pointer transition delay-150 duration-300 ease-in-out hover:translate-y-1 hover:scale-110 hover:bg-orange-400 hover:rotate-20">
             <a href="https://www.linkedin.com/in/juancamilomontero/" target="_blank">
-                <img src="../../assets/linkedin.svg" alt="github" class="size-7"></a>
+                <img src={linkedinIcon.src} alt="github" class="size-7"></a>
             </div>
         <div class="social-icon p-3 rounded-full bg-mauve-200 cursor-pointer transition delay-150 duration-300 ease-in-out hover:translate-y-1 hover:scale-110 hover:bg-orange-400 hover:rotate-20">
             <a href="mailto:monterocamilo99@hotmail.com?subject=Contacto%20desde%20tu%20portfolio" aria-label="Enviar un correo">
-                <img src="../../assets/email-svgrepo-com.svg" alt="github" class="size-7">
+                <img src={emailIcon.src} alt="github" class="size-7">
             </a>
         </div>
     </div>
