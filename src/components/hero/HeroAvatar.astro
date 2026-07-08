@@ -3,6 +3,7 @@ import emailIcon from "../../assets/email-svgrepo-com.svg";
 import linkedinIcon from "../../assets/linkedin.svg";
 import githubIcon from "../../assets/github.svg";
 import donwloadIcon from "../../assets/descargar.svg";
+import cvCamiloDownload from "../../../public/cv/cv_camilo.pdf";
 ---
 
 <div class="hero flex justify-center items-center gap-8 flex-col h-screen mt-25 md:h-screen sm:mt-25 md:mt-0 sm:h-screen">
@@ -19,7 +20,7 @@ import donwloadIcon from "../../assets/descargar.svg";
         <button class="flex border-2 w-50 h-15 place-content-center place-items-center rounded-xl bg-mist-950 text-center p-2 md:text-base text-base font-bold text-white
         transition delay-150 duration-300 ease-in-out hover:translate-y-1 hover:scale-110 cursor-pointer"
         onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">ver proyectos</button>
-        <a href="/public/cv/cv_camilo.pdf" download class="flex border-2 w-50 h-15 place-content-center place-items-center rounded-xl hover:bg-mauve-200 cursor-pointer">
+        <a href={cvCamiloDownload} download class="flex border-2 w-50 h-15 place-content-center place-items-center rounded-xl hover:bg-mauve-200 cursor-pointer">
             <img src={donwloadIcon.src} alt="descargar" class="size-7">
             <p class="text-center p-2 md:text-base text-base font-bold text-black">Descargar CV</p>
         </a> 
