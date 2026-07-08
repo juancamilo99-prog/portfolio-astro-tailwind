@@ -23,9 +23,7 @@ import { ExternalLink } from "lucide-astro";
           <div class="project-card border rounded-2xl group transition-all duration-300 ease-in-out hover:-translate-y-2 hover:scale-[1.02] hover:shadow-2xl cursor-pointer"> <!-- contenedor entero -->
           <!-- contenedor imagen -->
             <div class="bg-linear-to-br from-orange-400 to-green-600 h-50 flex items-center justify-center rounded-t-2xl">
-               <div class="text-7xl">
-                {project.image}
-               </div>
+               <img src={project.image.src} alt={project.title} class="w-full h-full object-cover rounded-t-2xl" />
             </div>
             <!-- contenedor informacion -->
             <div class="min-h-min px-6 py-6">
@@ -45,11 +43,11 @@ import { ExternalLink } from "lucide-astro";
               </div>
               <!-- contenedor git y demo -->
               <div class="flex gap-4">
-                <a href={project.github} class="flex items-center gap-2 text-sm hover:text-orange-500 transition-colors">
+                <a href={project.github} class="flex items-center gap-2 text-sm hover:text-orange-500 transition-colors" target="_blank">
                   <Github class="w-6 h-6"/>
                   Código
                 </a>
-                <a href={project.demo} class="flex items-center gap-2 text-sm hover:text-orange-500 transition-colors">
+                <a href={project.demo} class="flex items-center gap-2 text-sm hover:text-orange-500 transition-colors" target="_blank">
                   <ExternalLink class="w-6 h-6"/>
                   Demo
                 </a>
