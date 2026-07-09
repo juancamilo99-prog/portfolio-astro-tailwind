@@ -74,6 +74,7 @@ src
 │
 ├── assets/
 ├── components/
+├── data/
 ├── icons/
 ├── layouts/
 ├── pages/
