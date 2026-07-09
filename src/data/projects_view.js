@@ -21,7 +21,7 @@ export const projects = [
     tags: ["JavaScript", "Astro", "GSAP", "Tailwind"],
     image: portfolio,
     github: "https://github.com/juancamilo99-prog/portfolio-astro-tailwind",
-    demo: "#",
+    demo: "https://portfolio-astro-tailwind.vercel.app/",
   },
   {
     title: "Barber API",
@@ -33,10 +33,10 @@ export const projects = [
     demo: "#",
   },
   {
-    title: 'Portfolio Generator',
+    title: 'Practica Backend API',
       description:
-        'Generador de portfolios con plantillas personalizables y exportación a código.',
-      tags: ['Next.js', 'Tailwind', 'MDX'],
+        'Creando una api y practicando CRUD con bases de datos no relacional.',
+      tags: ['Express', 'MongoDB', 'Postman'],
       image: apiconsumer,
       github: 'https://github.com/juancamilo99-prog/Proyecto-5-NoSQL---Juan-Camilo-Montero',
       demo: '#',
