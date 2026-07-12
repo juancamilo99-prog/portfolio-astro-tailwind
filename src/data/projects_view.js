@@ -1,4 +1,4 @@
-import { Link } from "lucide-astro";
+
 import barberapi from "../assets/projects/barberapi.webp";
 import biblioteca from "../assets/projects/biblioteca.webp";
 import portfolio from "../assets/projects/portfolio.webp";
@@ -30,7 +30,7 @@ export const projects = [
     tags: ["HTML", "JavaScript", "CSS", "Java", "Spring Boot"],
     image: barberapi,
     github: "https://github.com/juancamilo99-prog/BarberAPI-Intermodular",
-    demo: "#",
+    demo: "https://barberapi-intermodular.onrender.com/",
   },
   {
     title: 'Practica Backend API',
