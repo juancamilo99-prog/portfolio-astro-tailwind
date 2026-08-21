@@ -3,6 +3,7 @@ import barberapi from "../assets/projects/barberapi.webp";
 import biblioteca from "../assets/projects/biblioteca.webp";
 import portfolio from "../assets/projects/portfolio.webp";
 import apiconsumer from "../assets/projects/getpostman.webp";
+import eco from "../assets/projects/eco.webp";
 
 export const projects = [
   {
@@ -40,5 +41,14 @@ export const projects = [
       image: apiconsumer,
       github: 'https://github.com/juancamilo99-prog/Proyecto-5-NoSQL---Juan-Camilo-Montero',
       demo: '#',
+  },
+  {
+    title: 'Eco',
+      description:
+        'Skill de IA open source que guía a programadores junior hacia la solución con preguntas, en vez de entregarles el código resuelto. Compatible con Claude Code, Codex CLI, Gemeni CLI y cualquier chat de IA',
+      tags: ['Bash', 'Markdown', 'Claude Code', 'IA', 'Agents', 'Git'],
+      image: eco,
+      github: 'https://github.com/juancamilo99-prog/eco-learning',
+      demo: 'https://github.com/juancamilo99-prog/eco-learning',
   }
 ];

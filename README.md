@@ -133,8 +133,8 @@ npm run dev
 - ✅ Contact
 - ✅ Responsive Design
 - ✅ Deploy en Vercel
-- 🔄 Mejoras de accesibilidad
-- 🔄 Optimización SEO
+- ✅ Mejoras de accesibilidad
+- ✅ Optimización SEO
 - 🔄 Casos de estudio para los proyectos
 - 🔄 Blog técnico
 
