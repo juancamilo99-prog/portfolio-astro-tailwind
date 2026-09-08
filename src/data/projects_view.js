@@ -4,6 +4,7 @@ import biblioteca from "../assets/projects/biblioteca.webp";
 import portfolio from "../assets/projects/portfolio.webp";
 import apiconsumer from "../assets/projects/getpostman.webp";
 import eco from "../assets/projects/eco.webp";
+import apiuniverse from "../assets/projects/apiuni-verse.webp";
 
 export const projects = [
   {
@@ -50,5 +51,14 @@ export const projects = [
       image: eco,
       github: 'https://github.com/juancamilo99-prog/eco-learning',
       demo: 'https://github.com/juancamilo99-prog/eco-learning',
+  },
+  {
+    title: 'Apiuniverse',
+      description:
+        'SPA en React que consume la Jikan API para buscar, explorar y guardar animes favoritos.',
+      tags: ['React', 'Vite', 'Jikan API'],
+      image: apiuniverse,
+      github: 'https://github.com/juancamilo99-prog/Proyecto-2-ReactJS--Juan-Camilo-Montero',
+      demo: 'https://apiuniverse-anime.vercel.app/',
   }
 ];
