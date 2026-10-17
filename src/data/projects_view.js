@@ -29,7 +29,7 @@ export const projects = [
   {
     title: "Barber API",
     description:
-      "Sistema de reservas para barberia.",
+      "Sistema de reservas para barberia donde gestionar citas",
     tags: ["HTML", "JavaScript", "CSS", "Java", "Spring Boot"],
     image: barberapi,
     github: "https://github.com/juancamilo99-prog/BarberAPI-Intermodular",
