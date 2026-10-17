@@ -5,6 +5,7 @@ import portfolio from "../assets/projects/portfolio.webp";
 import apiconsumer from "../assets/projects/getpostman.webp";
 import eco from "../assets/projects/eco.webp";
 import apiuniverse from "../assets/projects/apiuni-verse.webp";
+import stockflowsystem from "../assets/projects/stockflow.webp";
 
 export const projects = [
   {
@@ -60,5 +61,14 @@ export const projects = [
       image: apiuniverse,
       github: 'https://github.com/juancamilo99-prog/Proyecto-2-ReactJS--Juan-Camilo-Montero',
       demo: 'https://apiuniverse-anime.vercel.app/',
+  },
+  {
+    title: 'Stock Flow System',
+      description:
+        'Sistema de gestión logística desarrollado para optimizar el control de inventario, entradas, salidas y trazabilidad de productos en un almacén.',
+      tags: ['Java 25', 'Spring Boot 4', 'Spring Data JPA', 'PostgreSQL', 'Spring Security', 'JWT', 'REST API', 'Swagger', 'Docker'],
+      image: stockflowsystem,
+      github: 'https://github.com/juancamilo99-prog/Stock-flow-system',
+      demo: 'https://github.com/juancamilo99-prog/Stock-flow-system',
   }
 ];
