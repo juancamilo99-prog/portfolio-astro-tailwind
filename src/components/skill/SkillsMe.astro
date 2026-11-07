@@ -13,6 +13,26 @@ import SpringBootIconAStro from "../icons/skill_icons/backend/spring.astro";
 import DockerInconAstroComponent from "../icons/skill_icons/toolsIcon/dockerIncon.astro";
 import GitIconAstroComponent from "../icons/skill_icons/toolsIcon/gitIcon.astro";
 import PostmanIconAstroComponent from "../icons/skill_icons/toolsIcon/postmanIcon.astro";
+import IconHtml from "../icons/iconHtml.astro";
+
+
+
+
+const FRONTENDICONS = [
+    {
+        image: HtmlsImage
+    },
+    {
+        image: CSSImage
+    },
+    {
+        image: TailwindIcon
+    },
+    {
+        image: AstroIconAstroComponent
+    }
+]
+
 ---
 
 <section id="skills" class="scroll-mt-28">
@@ -33,11 +53,11 @@ import PostmanIconAstroComponent from "../icons/skill_icons/toolsIcon/postmanIco
                     <div class="content-skill min-h-52 rounded-3xl border-2 border-gray-400 p-8 flex flex-col place-items-center gap-8 md:w-full lg:w-full
                     transition-shadow hover:shadow-2xl">
                         <h2 class="text-base font-bold mb-1 md:text-2xl md:font-bold lg:text-4xl">Frontend</h2>
-                        <div class="flex flex-wrap gap-5 justify-center items-center md:flex md:flex-wrap py-10">
-                            <HtmlsImage class="w-12 h-12 object-contain"/>
-                            <CSSImage class="w-12 h-12 object-contain"/>
-                            <TailwindIcon class="w-12 h-12 object-contain"/>
-                            <AstroIconAstroComponent class="w-12 h-12 object-contain"/>
+                        <div class="flex flex-wrap gap-5 justify-center items-center lg:flex-wrap py-10">
+                            {FRONTENDICONS.map((item) => {
+                            const Icon = item.image;
+                            return <Icon class={"w-12 h-12 object-contain"}/>;
+                        })}
                         </div>
                     </div>
                     <!-- div segundo hijo -->
